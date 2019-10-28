@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <h1>Hey everyone</h1>
-    <meta charset="utf-8">
-    <title></title>
+    <title>
+      Fortune Form
+    </title>
   </head>
-  <body>
 
-  </body>
-</html>
+<body class=body>
+  <div class=list>
+    <h3> Welcome to the FortuneTeller! Fill out this form to determine your faith.</h3>
+      <form action='/fortune_results' method='get'>
+
+          <br>What is your first name:
+          <input type="text" name="firstname"
+          <br><br>
+          What is your last name:
+          <input type="text" name="lastname"
+          <br><br>
+
+        <p>Please select your gender:</p>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other<br>
+
+        <p>Please select your age:</p>
+          <input type="radio" name="age" value="30"> 0 - 30<br>
+          <input type="radio" name="age" value="60"> 31 - 60<br>
+          <input type="radio" name="age" value="100"> 61 - 100<br>
+
+
+        <p>What is your favorite anime:</p>
+        <select>
+          <option value="Naruto">Naruto</option>
+          <option value="One Piece">One Piece</option>
+          <option value="Dragon Ball Z">Dragon Ball Z</option>
+          <option value="Angel Beats">Angel Beats</option>
+        </select><br><br>
+
+        <p>Enter how many sibilings you have? </p>
+        <input type="number" name="quantity"
+          <br><br><br>
+
+        <input type="submit" value="Submit">
+        </form>
+      </div>
+    </body>
+  </html>
